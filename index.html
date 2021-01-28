@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>aDLA Outpost</title>
+		<style>
+			.trans { color:transparent; }
+		</style>
+	</head>
+	<body>
+	<div class="title"></div>
+	<div class="bodytext"></div>
+	<div class="animateTitle trans"></div>
+	<p>Credit: <a href="https://observablehq.com/@dla/adlaoutpost">adlaoutpost by Digital Language Art</a></p>
+	</body>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@dla/adlaoutpost.js?v=3";
+(new Runtime).module(define, name => {
+  if (name === "title") return Inspector.into(".title")();
+  if (name === "bodytext") return Inspector.into(".bodytext")();
+  if (name === "animateTitle") return Inspector.into(".animateTitle")();
+});
+</script>
+</html>
