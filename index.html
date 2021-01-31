@@ -7,7 +7,14 @@
 		</style>
 	</head>
 	<body>
-	<div class="title">LAOB</div>
-	<div class="bodytext">Nothing here as yet !</div>
+	<div id="observablehq-banner-5a751ede"></div>
 	</body>
+	
+	<script type="module">
+	import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+	import define from "https://api.observablehq.com/@laob/laob.js?v=3";
+	new Runtime().module(define, name => {
+	  if (name === "banner") return new Inspector(document.querySelector("#observablehq-banner-5a751ede"));
+	});
+	</script>
 </html>
