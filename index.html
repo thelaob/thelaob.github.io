@@ -8,6 +8,7 @@
 	</head>
 	<body>
 	<div id="observablehq-banner-5a751ede"></div>
+	<div id="observablehq-masthead-5d84d529"></div>
 	</body>
 	
 	<script type="module">
@@ -15,6 +16,10 @@
 	import define from "https://api.observablehq.com/@laob/laob.js?v=3";
 	new Runtime().module(define, name => {
 	  if (name === "banner") return new Inspector(document.querySelector("#observablehq-banner-5a751ede"));
+	});
+	import define from "https://api.observablehq.com/@laob/board-members.js?v=3";
+	new Runtime().module(define, name => {
+	  if (name === "masthead") return new Inspector(document.querySelector("#observablehq-masthead-5d84d529"));
 	});
 	</script>
 </html>
