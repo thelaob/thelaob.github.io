@@ -6,6 +6,7 @@
 	</head>
 	<body>
 	<div id="observablehq-banner-5a751ede" class="banner"></div>
+	<div id="observablehq-about-0f19e663"></div>
 	<div id="observablehq-masthead-5d84d529"></div>
 	</body>
 	
@@ -14,6 +15,7 @@
 	import define from "https://api.observablehq.com/@laob/laob.js?v=3";
 	new Runtime().module(define, name => {
 	  if (name === "banner") return new Inspector(document.querySelector("#observablehq-banner-5a751ede"));
+		if (name === "about") return new Inspector(document.querySelector("#observablehq-about-0f19e663"));
 	});
 	import define2 from "https://api.observablehq.com/@laob/board-members.js?v=3";
 	new Runtime().module(define2, name => {
