@@ -5,21 +5,29 @@
 		<link rel='stylesheet' href='style.css' type='text/css' media='all' />
 	</head>
 	<body>
-	<div id="observablehq-banner-5a751ede" class="banner"></div>
-	<div id="observablehq-about-0f19e663"></div>
-	<div id="observablehq-masthead-5d84d529"></div>
+		<div class="banner">
+			<div id="observablehq-logo-d92d9ce9" class="banner-logo"></div>
+			<div id="observablehq-banner-5a751ede" class="banner-copy"></div>
+		</div>
+		<div class="main">
+			<div class="main-copy">
+				<div id="observablehq-about-0f19e663"></div>
+				<div id="observablehq-masthead-5d84d529"></div>
+			</div>
+		</div>
 	</body>
 	
 	<script type="module">
-	import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-	import define from "https://api.observablehq.com/@laob/laob.js?v=3";
-	new Runtime().module(define, name => {
-	  if (name === "banner") return new Inspector(document.querySelector("#observablehq-banner-5a751ede"));
-		if (name === "about") return new Inspector(document.querySelector("#observablehq-about-0f19e663"));
-	});
-	import define2 from "https://api.observablehq.com/@laob/board-members.js?v=3";
-	new Runtime().module(define2, name => {
-	  if (name === "masthead") return new Inspector(document.querySelector("#observablehq-masthead-5d84d529"));
-	});
+		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+		import define from "https://api.observablehq.com/@laob/laob.js?v=3";
+		new Runtime().module(define, name => {
+			if (name === "logo") return new Inspector(document.querySelector("#observablehq-logo-d92d9ce9"));
+		  if (name === "banner") return new Inspector(document.querySelector("#observablehq-banner-5a751ede"));
+			if (name === "about") return new Inspector(document.querySelector("#observablehq-about-0f19e663"));
+		});
+		import define2 from "https://api.observablehq.com/@laob/board-members.js?v=3";
+		new Runtime().module(define2, name => {
+		  if (name === "masthead") return new Inspector(document.querySelector("#observablehq-masthead-5d84d529"));
+		});
 	</script>
 </html>
