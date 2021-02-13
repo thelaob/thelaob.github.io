@@ -5,6 +5,7 @@
 
 body {
   background-color: #000;
+	color: grey;
   cursor: none;
   overflow: hidden;
   /*border: 1px dashed #ffffff;*/
