@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'AndaleMono';
+  src: url('../../fonts/AndaleMono.ttf');
+}
+
+body {
+  background-color: #000;
+  cursor: none;
+  overflow: hidden;
+  /*border: 1px dashed #ffffff;*/
+}
+
+.shimmer {
+  position: relative;
+  /*min-width: 960px;*/
+  max-width: 980px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*min-height: 680px;*/
+  /*border: 1px dashed #ff0000;*/
+}
+
+.mono {
+  color: rgba(255,255,255,255);
+  font-family: 'AndaleMono', monospace;
+  font-size: 44px;
+  font-size: 3.4vw;
+ }
+
+.trans { color:transparent; }

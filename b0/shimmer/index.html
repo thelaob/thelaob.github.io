@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="UTF-8">
+		<title>LAOb c0 • shimmer</title>
+		<link rel='stylesheet' href='https://thelaob.com/style.css' type='text/css' media='all' />
+	  <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+  </head>
+  <body>
+    <div id="observablehq-shimmerEmbeddable-1b949788" class="shimmerEmbeddable shimmer mono"></div>
+    <div id="observablehq-ticker-1b949788" class="ticker trans"></div>
+    <div id="observablehq-swell-1b949788" class="swell trans"></div>
+  </body>
+	
+	<script type="module">
+		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+		import define from "https://api.observablehq.com/@laob/shimmer.js?v=3";
+		new Runtime().module(define, name => {
+		  if (name === "ticker") return new Inspector(document.querySelector("#observablehq-ticker-1b949788"));
+		  if (name === "shimmerEmbeddable") return new Inspector(document.querySelector("#observablehq-shimmerEmbeddable-1b949788"));
+		  if (name === "swell") return new Inspector(document.querySelector("#observablehq-swell-1b949788"));
+		});
+	</script>
+	
+</html>
