@@ -7,18 +7,18 @@
 		<link rel='stylesheet' href='style.css' type='text/css' media='all' />
   </head>
   <body>
-    <div id="observablehq-shimmerEmbeddable-ad22f92e" class="shimmer mono"></div>
+    <div id="observablehq-shimmeringEmbedable-1a1c7ffe" class="shimmer mono"></div>
 		<div style="text-align: center; margin-top: 1.5vw;;"><a href="../../">Back to LAOb</a> | <a href="https://observablehq.com/@laob/shimmer"><i>shimmer</i>’s notebook</a></div> 
-    <div id="observablehq-swell-ad22f92e" class="trans"></div>
+    <div id="observablehq-swell-1a1c7ffe" class="trans"></div>
   </body>
 	
   <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-    import define from "https://api.observablehq.com/@laob/shimmer.js?v=3";
-    new Runtime().module(define, name => {
-      if (name === "shimmerEmbeddable") return new Inspector(document.querySelector("#observablehq-shimmerEmbeddable-ad22f92e"));
-      if (name === "swell") return new Inspector(document.querySelector("#observablehq-swell-ad22f92e"));
-      return ["shimmerer","ticker"].includes(name);
-    });
-  </script>
+		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+		import define from "https://api.observablehq.com/@laob/shimmer.js?v=3";
+		new Runtime().module(define, name => {
+		  if (name === "shimmeringEmbedable") return new Inspector(document.querySelector("#observablehq-shimmeringEmbedable-1a1c7ffe"));
+		  if (name === "swell") return new Inspector(document.querySelector("#observablehq-swell-1a1c7ffe"));
+		});
+	</script>
 </html>
+
