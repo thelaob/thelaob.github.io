@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>LAOb</title>
-		<link rel='stylesheet' href='style.css' type='text/css' media='all' />
-	</head>
-	<body>
-		<div class="banner">
-			<div id="observablehq-logo-d92d9ce9" class="banner-logo"></div>
-			<div id="observablehq-banner-5a751ede" class="banner-copy"></div>
-		</div>
-		<div class="main">
-			<div class="main-copy">
-				<div id="observablehq-about-0f19e663"></div>
-				<div>
-					<hr>
-						<h4>Annual 0</h4>
-						<p><a href="a0/shimmer"><i>shimmer</i></a><br>
-						&nbsp;&nbsp;&nbsp; John Cayley, Feb 2021<br>
-						&nbsp;&nbsp;&nbsp; <a href="https://observablehq.com/@laob/shimmer">notebook</a></p>
-				</div>
-				<div id="observablehq-masthead-5d84d529"></div>
-			</div>
-		</div>
-	</body>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	
-	<script type="module">
-		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-		import define from "https://api.observablehq.com/@laob/laob.js?v=3";
-		new Runtime().module(define, name => {
-			if (name === "logo") return new Inspector(document.querySelector("#observablehq-logo-d92d9ce9"));
-		  if (name === "banner") return new Inspector(document.querySelector("#observablehq-banner-5a751ede"));
-			if (name === "about") return new Inspector(document.querySelector("#observablehq-about-0f19e663"));
-		});
-		import define2 from "https://api.observablehq.com/@laob/board-members.js?v=3";
-		new Runtime().module(define2, name => {
-		  if (name === "masthead") return new Inspector(document.querySelector("#observablehq-masthead-5d84d529"));
-		});
-	</script>
+	<title>LAOb</title>
+	
+	<link rel='stylesheet' href='style.css' type='text/css' media='all' />
+</head>
+<body>
+	<div class="banner">
+		<div id="observablehq-logo-d1de3abd" class="banner-logo"></div>
+		
+		<div id="observablehq-banner-d1de3abd" class="banner-copy"></div>
+	</div>
+	
+	<div class="main">
+		<div class="main-copy">
+			<div id="observablehq-about-d1de3abd"></div>
+			
+			<div id="observablehq-laob_current-d1de3abd"></div>
+			
+			<div id="observablehq-laob_masthead-d1de3abd"></div>
+		</div>
+	</div>
+	
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@laob/laob.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "banner") return new Inspector(document.querySelector("#observablehq-banner-d1de3abd"));
+  if (name === "about") return new Inspector(document.querySelector("#observablehq-about-d1de3abd"));
+  if (name === "laob_current") return new Inspector(document.querySelector("#observablehq-laob_current-d1de3abd"));
+  if (name === "laob_masthead") return new Inspector(document.querySelector("#observablehq-laob_masthead-d1de3abd"));
+  if (name === "logo") return new Inspector(document.querySelector("#observablehq-logo-d1de3abd"));
+});
+</script>
+</body>
 </html>
