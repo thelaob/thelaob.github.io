@@ -1,12 +1,12 @@
-body {
-}
-
 a {
 	color: gray;
 }
 
 a:hover {
 	color: silver;
+}
+
+body {
 }
 
 p {
@@ -22,18 +22,14 @@ p {
 	top: 2vw;
 }
 
-.banner-logo {
-	position: absolute;
-	left: 3vw;
-}
-
-#logoimg {
-	width: 10vw;
-}
-
 .banner-copy {
 	position: absolute;
 	left: 15vw;
+}
+
+.banner-logo {
+	position: absolute;
+	left: 3vw;
 }
 
 .main {
@@ -49,4 +45,15 @@ p {
 
 .trans {
 	color:transparent;
+}
+
+#logoimg {
+	width: 10vw;
+}
+
+#openBio {
+  position: fixed;
+  top: 20vh;
+  left: 50vw;
+  width: 45vw;
 }

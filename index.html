@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	
-	<title>LAOb</title>
-	
-	<link rel='stylesheet' href='style.css' type='text/css' media='all' />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+  <title>LAOb</title>
+  
+  <link rel='stylesheet' href='style.css' type='text/css' media='all' />
 </head>
 <body>
-	<div class="banner">
-		<div id="observablehq-logo-d1de3abd" class="banner-logo"></div>
-		
-		<div id="observablehq-banner-d1de3abd" class="banner-copy"></div>
-	</div>
-	
-	<div class="main">
-		<div class="main-copy">
-			<div id="observablehq-about-d1de3abd"></div>
-			
-			<div id="observablehq-laob_current-d1de3abd"></div>
-			
-			<div id="observablehq-laob_masthead-d1de3abd"></div>
-		</div>
-	</div>
-	
+  <div class="banner">
+    <!--<div id="observablehq-logo-e581318c" class="banner-logo"></div>-->
+    
+    <div id="observablehq-banner-0d6f8b63" class="banner-copy"></div>
+  </div>
+  
+  <div class="main">
+    <div class="main-copy">
+      <div id="observablehq-about-e581318c"></div>
+      
+      <!--<div "observablehq-laob_current-e581318c"></div>-->
+      
+      <!--<div id="observablehq-laob_masthead-e581318c"></div>-->
+      
+    </div>
+    
+</div>
+</body>
+
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@laob/laob.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "banner") return new Inspector(document.querySelector("#observablehq-banner-d1de3abd"));
-  if (name === "about") return new Inspector(document.querySelector("#observablehq-about-d1de3abd"));
-  if (name === "laob_current") return new Inspector(document.querySelector("#observablehq-laob_current-d1de3abd"));
-  if (name === "laob_masthead") return new Inspector(document.querySelector("#observablehq-laob_masthead-d1de3abd"));
-  if (name === "logo") return new Inspector(document.querySelector("#observablehq-logo-d1de3abd"));
+  if (name === "laob_banner") return new Inspector(document.querySelector("#observablehq-laob_banner-0d6f8b63"));
 });
 </script>
-</body>
 </html>
