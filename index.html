@@ -7,22 +7,6 @@
   
   <link rel='stylesheet' href='style.css' type='text/css' media='all' />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript">
-	bioHover = () => {
-  let firstName = "";
-  $(".onBoard").hover(
-    function() {
-      firstName = $(this)
-        .text()
-        .split(" ")[0];
-      $("#openBio").html($("#" + firstName).html());
-    },
-    function() {
-      $("#openBio").html("");
-    }
-  );
-}
-</script>
 </head>
 <body>
   <div class="banner">
@@ -54,5 +38,26 @@ new Runtime().module(define, name => {
   if (name === "laob_masthead") return new Inspector(document.querySelector("#observablehq-laob_masthead-5366e956"));
   if (name === "laob_logo") return new Inspector(document.querySelector("#observablehq-laob_logo-5366e956"));
 });
+
+var firstName = "";
+$(window).on("load", function() {
+$(".onBoard").on({
+	"click":
+  function() {
+		$( this ).css("background-color", "yellow");
+		console.log(`this: ${this} length: ${this.length} this[0]: ${this[0]}`);
+	},
+//    firstName = $(this)
+//      .text()
+//      .split(" ")[0];
+    // $("#openBio").html($("#" + firstName).html());
+  // ,
+  "mouseout":
+	function() {
+		$( this ).css("background-color", "white");
+//    $("#openBio").html("");
+  }
+});
+})
 </script>
 </html>

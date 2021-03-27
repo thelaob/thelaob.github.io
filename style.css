@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'PE_Std';
+  src: url('fonts/PrestigeEliteStd.woff2');
+}
+
 a {
 	color: gray;
 }
@@ -7,6 +12,24 @@ a:hover {
 }
 
 body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(243,242,255);	
+}
+
+h1 {
+  font-family: PE_Std, 'Courier New', serif;
+}
+
+h2 {
+  font-family: PE_Std, 'Courier New', serif;
+}
+
+h3 {
+  font-family: PE_Std, 'Courier New', serif;
+}
+
+h4 {
+  font-family: PE_Std, 'Courier New', serif;
 }
 
 p {
@@ -14,9 +37,15 @@ p {
   margin-block-end: 0px;
 }
 
+.arial {
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+}
+
 .banner {
 	position: relative;
 	min-height: 6vw;
+  font-family: PE_Std, 'Courier New', serif;
 	font-variant: small-caps;
 	font-size: 3vw;
 	top: 2vw;
@@ -43,6 +72,14 @@ p {
 	width: 80%;
 }
 
+.onBoard {
+	cursor: help;
+}
+
+.pe_std {
+  font-family: PE_Std, 'Courier New', serif;
+}
+
 .trans {
 	color:transparent;
 }
@@ -53,7 +90,9 @@ p {
 
 #openBio {
   position: fixed;
+	cursor: help;
+	background-color: white;
   top: 20vh;
   left: 50vw;
-  width: 45vw;
+	max-width: 45vw;
 }
