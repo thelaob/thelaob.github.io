@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'PE_Bld';
-  src: url('${await FileAttachment("fonts/PrestigeEliteStd-Bd.woff2").url()}');
+  src: url('fonts/PrestigeEliteStd-Bd.woff2');
 }
 a {
 	color: gray;
@@ -48,21 +48,11 @@ p {
 
 .banner {
 	position: relative;
-	min-height: 6vw;
   font-family: PE_Std, 'Courier New', serif;
 	font-variant: small-caps;
 	font-size: 3vw;
 	top: 2vw;
-}
-
-.banner-copy {
-	position: absolute;
 	left: 15vw;
-}
-
-.banner-logo {
-	position: absolute;
-	left: 3vw;
 }
 
 .main {
@@ -74,10 +64,6 @@ p {
 	position: absolute;
 	left: 15vw;
 	width: 80%;
-}
-
-.onBoard {
-	cursor: help;
 }
 
 .pe_std {
@@ -92,8 +78,8 @@ p {
 	color:transparent;
 }
 
-#logoimg {
-	width: 10vw;
+.onBoard {
+	cursor: help;
 }
 
 #openBio {
