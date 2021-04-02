@@ -3,6 +3,10 @@
   src: url('fonts/PrestigeEliteStd.woff2');
 }
 
+@font-face {
+  font-family: 'PE_Bld';
+  src: url('${await FileAttachment("fonts/PrestigeEliteStd-Bd.woff2").url()}');
+}
 a {
 	color: gray;
 }
@@ -78,6 +82,10 @@ p {
 
 .pe_std {
   font-family: PE_Std, 'Courier New', serif;
+}
+
+.pe_bld {
+  font-family: PE_Bld, 'Courier New', serif;
 }
 
 .trans {
