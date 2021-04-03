@@ -17,6 +17,7 @@ a:hover {
 
 body {
   font-family: Arial, sans-serif;
+  font-size: 2vw;
   background-color: rgb(243,242,255);	
 }
 
@@ -52,7 +53,7 @@ p {
 	font-variant: small-caps;
 	font-size: 3vw;
 	top: 2vw;
-	left: 15vw;
+	left: 10vw;
 }
 
 .logospankern {
@@ -70,7 +71,7 @@ p {
 
 .main-copy {
 	position: absolute;
-	left: 15vw;
+	left: 10vw;
 	width: 80%;
 }
 
