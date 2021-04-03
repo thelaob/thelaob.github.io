@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="UTF-8">
+		<title>THE LAOB hello world</title>
+  </head>
+  <body>
+		<div id="observablehq-Hello_World-6ea61628"></div>
+		<p>Credit: <a href="https://observablehq.com/@laob/laob-getting-started">LAOB GETTING STARTED by THE LAOB</a></p>
+		
+		<script type="module">
+		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+		import define from "https://api.observablehq.com/@laob/laob-getting-started.js?v=3";
+		new Runtime().module(define, name => {
+		  if (name === "Hello_World") return new Inspector(document.querySelector("#observablehq-Hello_World-6ea61628"));
+		});
+		</script>
+	</body>
+</html>
+
