@@ -119,6 +119,7 @@ hdff {
   top: var(--ind);
   left: var(--ind);
   width: 60vw;
+  line-height: 1em;
 }
 
 /* website only */
