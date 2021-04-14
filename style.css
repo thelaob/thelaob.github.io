@@ -1,15 +1,29 @@
 @font-face {
-  font-family: 'PE_Std';
+  font-family: 'HeadingsFontFamily_Light';
   src: url('fonts/PrestigeEliteStd.woff2');
 }
 
 @font-face {
-  font-family: 'PE_Bld';
+  font-family: 'HeadingsFontFamily';
   src: url('fonts/PrestigeEliteStd-Bd.woff2');
 }
 
+:root {
+  --bgcol: rgb(243,242,255);
+  --cpf: 2vw lighter Arial, sans-serif;
+  --cpff: lighter Arial, sans-serif;
+  --fbu: 2vw;
+  --hdf: 3vw HeadingsFontFamily, 'Courier New', serif;
+  --hdff: HeadingsFontFamily, 'Courier New', serif;
+  --ina: 5vw;
+  --inb: 10vw;
+  --inc: 15vw;
+  --ind: 20vw;
+}
+
 a {
-	opacity: .9;
+  color: black;
+	opacity: .7;
   text-decoration: none;
 }
 
@@ -18,25 +32,14 @@ a:hover {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  font-size: 2vw;
-  background-color: rgb(243,242,255);	
+  position: relative;
+  font: var(--cpf);
+  background-color: var(--bgcol);
 }
 
 h1 {
-  font-family: PE_Std, 'Courier New', serif;
-}
-
-h2 {
-  font-family: PE_Std, 'Courier New', serif;
-}
-
-h3 {
-  font-family: PE_Std, 'Courier New', serif;
-}
-
-h4 {
-  font-family: PE_Std, 'Courier New', serif;
+  font: var(--hdf);
+  line-height: .9em;
 }
 
 p {
@@ -44,23 +47,42 @@ p {
   margin-block-end: 0px;
 }
 
-.arial {
-  font-family: Arial, sans-serif;
-  font-weight: lighter;
-}
-
 .banner {
-	position: relative;
-  font-family: PE_Std, 'Courier New', serif;
-	font-variant: small-caps;
-	font-size: 3vw;
-	top: 2vw;
-	left: 10vw;
-  min-width: 80vw;
+  position: absolute;
+  top: calc(var(--fbu) * 3);
+  left: var(--inb);
+  font: var(--hdf);
+  line-height: .9em;
 }
 
-.indent1 {
-  margin-left: 5vw;
+.cpf {
+  font-family: var(--cpf);
+}
+
+.cpff {
+  font: var(--cpff);
+}
+
+.cpf-h1 {
+  font: var(--cpf);
+  font-size: 3vw;
+  line-height: .8em;
+}
+
+.hdf {
+  font:  var(--hdf);
+}
+
+hdff {
+  font-family: var(--hdff);
+}
+
+.hdf-light {
+  font-family: HeadingsFontFamily_Light, 'Courier New', serif;
+}
+
+.ina {
+  margin-left: var(--ina);
 }
 
 .logospankern {
@@ -71,40 +93,37 @@ p {
   letter-spacing: -.1em;
 }
 
-.main {
-	position: relative;
-	
-}
-
-.main-copy {
-	position: absolute;
-	left: 10vw;
-	width: 80%;
+.copy {
+  position: absolute;
+  top: var(--inc);
+  left: var(--ind);
+  width: 60vw;
 }
 
 .menu {
-	position: relative;
-  font-family: PE_Std, 'Courier New', serif;
-	font-variant: small-caps;
-	font-size: 2vw;
-	top: 2vw;
-	left: 5vw;
+  position: absolute;
+	top: var(--fbu);
+	left: var(--fbu);
+  font-family: HeadingsFontFamily_Light, 'Courier New', serif;
+	font-size: calc(var(--cpf) * .8);
   vertical-align: top;
 }
 
-.pe_std {
-  font-family: PE_Std, 'Courier New', serif;
+.ralign {
+  text-align: right;
 }
 
-.pe_bld {
-  font-family: PE_Bld, 'Courier New', serif;
+.toc {
+  position: absolute;
+  font: var(--hdf);
+  top: var(--ind);
+  left: var(--ind);
+  width: 60vw;
 }
 
-.top-right {
-  float: right;
-}
+/* website only */
 
-.trans {
+.none {
 	display: none;
 }
 
@@ -118,4 +137,9 @@ p {
   position: absolute;
   top:  .5vw;
   left: 80vw;
+}
+
+#logo {
+  position: absolute;
+  left: var(--ina);
 }
