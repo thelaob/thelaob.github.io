@@ -7,12 +7,14 @@
   font-family: 'PE_Bld';
   src: url('fonts/PrestigeEliteStd-Bd.woff2');
 }
+
 a {
-	color: gray;
+	opacity: .9;
+  text-decoration: none;
 }
 
 a:hover {
-	color: silver;
+	opacity: .5;
 }
 
 body {
@@ -54,6 +56,11 @@ p {
 	font-size: 3vw;
 	top: 2vw;
 	left: 10vw;
+  min-width: 80vw;
+}
+
+.indent1 {
+  margin-left: 5vw;
 }
 
 .logospankern {
@@ -75,6 +82,16 @@ p {
 	width: 80%;
 }
 
+.menu {
+	position: relative;
+  font-family: PE_Std, 'Courier New', serif;
+	font-variant: small-caps;
+	font-size: 2vw;
+	top: 2vw;
+	left: 5vw;
+  vertical-align: top;
+}
+
 .pe_std {
   font-family: PE_Std, 'Courier New', serif;
 }
@@ -83,19 +100,22 @@ p {
   font-family: PE_Bld, 'Courier New', serif;
 }
 
+.top-right {
+  float: right;
+}
+
 .trans {
-	color:transparent;
+	display: none;
 }
 
-.onBoard {
-	cursor: help;
+#about {
+  position: absolute;
+  top:  .5vw;
+  left: 67vw;
 }
 
-#openBio {
-  position: fixed;
-	cursor: help;
-	background-color: white;
-  top: 20vh;
-  left: 50vw;
-	max-width: 45vw;
+#annuals {
+  position: absolute;
+  top:  .5vw;
+  left: 80vw;
 }
