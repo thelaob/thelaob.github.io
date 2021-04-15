@@ -11,9 +11,16 @@
 <body>
   <div class="menu">
     <span id="logo">
+      <a href="/index.html">
       <big><span class="cpf-h1">LA</span><span class="hdf logokern logospankern">OB</span></big>
+      </a>
     </span>
-    <span id="about">ABOUT</span><span id="annuals">ANNUALS</span>
+    <span id="about">
+      <a href="/about.html">ABOUT</a>
+    </span>
+    <span id="annuals">
+      ANNUALS
+    </span>
   </div>
     
   <div class="banner">
@@ -43,26 +50,4 @@ new Runtime().module(define, name => {
 
 </body>
 
-<script>
-var firstName = "";
-$(window).on("load", function() {
-$(".onBoard").on({
-	"click":
-  function() {
-		$( this ).css("background-color", "yellow");
-		console.log(`this: ${this} length: ${this.length} this[0]: ${this[0]}`);
-	},
-//    firstName = $(this)
-//      .text()
-//      .split(" ")[0];
-    // $("#openBio").html($("#" + firstName).html());
-  // ,
-  "mouseout":
-	function() {
-		$( this ).css("background-color", "white");
-//    $("#openBio").html("");
-  }
-});
-})
-</script>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  
+  <title>THE LAOB</title>
+  
+  <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="menu">
+    <span id="logo">
+      <a href="/index.html">
+      <big><span class="cpf-h1">LA</span><span class="hdf logokern logospankern">OB</span></big>
+      </a>
+    </span>
+    <span id="rheader">
+      THE <span class="cpff">LANGUAGE ART</span> OBSERVER
+    </span>
+    <span id="annuals">
+      ANNUALS
+    </span>
+  </div>
+    
+  <div class="banner">
+    &nbsp;<br>ABOUT
+  </div>
+  
+  <div class="aboutcopy">
+    <div id="observablehq-laob_about-74982f3b"></div>
+    <div id="observablehq-laob_procedures-74982f3b"></div>
+    <div id="observablehq-laob_masthead-74982f3b"></div>
+    <div id="observablehq-laob_bios-74982f3b"></div>
+  </div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@laob/about.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "laob_about") return new Inspector(document.querySelector("#observablehq-laob_about-74982f3b"));
+  if (name === "laob_procedures") return new Inspector(document.querySelector("#observablehq-laob_procedures-74982f3b"));
+  if (name === "laob_masthead") return new Inspector(document.querySelector("#observablehq-laob_masthead-74982f3b"));
+  if (name === "laob_bios") return new Inspector(document.querySelector("#observablehq-laob_bios-74982f3b"));
+});
+</script>
+
+<style>
+  p {
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+</style>
+</body>
+
+</html>

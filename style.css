@@ -10,11 +10,9 @@
 
 :root {
   --bgcol: rgb(243,242,255);
-  --cpf: 2vw lighter Arial, sans-serif;
-  --cpff: lighter Arial, sans-serif;
+  --cpf: lighter 2vw Arial, sans-serif;
   --fbu: 2vw;
   --hdf: 3vw HeadingsFontFamily, 'Courier New', serif;
-  --hdff: HeadingsFontFamily, 'Courier New', serif;
   --ina: 5vw;
   --inb: 10vw;
   --inc: 15vw;
@@ -47,6 +45,14 @@ p {
   margin-block-end: 0px;
 }
 
+.aboutcopy {
+  position: absolute;
+  top: var(--inc);
+  left: var(--ind);
+  width: 60vw;
+  line-height: 1.2em;
+}
+
 .banner {
   position: absolute;
   top: calc(var(--fbu) * 3);
@@ -56,11 +62,12 @@ p {
 }
 
 .cpf {
-  font-family: var(--cpf);
+  font: var(--cpf);
 }
 
 .cpff {
-  font: var(--cpff);
+  font: var(--cpf);
+  font-size: 1em;
 }
 
 .cpf-h1 {
@@ -73,8 +80,9 @@ p {
   font:  var(--hdf);
 }
 
-hdff {
-  font-family: var(--hdff);
+.hdff {
+  font: var(--hdf);
+  font-size: 1em;
 }
 
 .hdf-light {
@@ -105,7 +113,7 @@ hdff {
 	top: var(--fbu);
 	left: var(--fbu);
   font-family: HeadingsFontFamily_Light, 'Courier New', serif;
-	font-size: calc(var(--cpf) * .8);
+	font-size: calc(var(--fbu) * .8);
   vertical-align: top;
 }
 
@@ -128,6 +136,11 @@ hdff {
 	display: none;
 }
 
+.subhead {
+  margin-left: -10vw;
+  margin-top: 5vw;
+}
+
 #about {
   position: absolute;
   top:  .5vw;
@@ -143,4 +156,11 @@ hdff {
 #logo {
   position: absolute;
   left: var(--ina);
+}
+
+#rheader {
+  position: absolute;
+  white-space: nowrap;
+  top:  .5vw;
+  left: 30vw;
 }
