@@ -10,7 +10,8 @@
 
 :root {
   --bgcol: rgb(243,242,255);
-  --cpf: lighter 2vw Arial, sans-serif;
+  --cpf: lighter 2vw/2.7vw Arial, sans-serif;
+  --cphf: 2vw/2.7vw HeadingsFontFamily, 'Courier New', serif;
   --fbu: 2vw;
   --hdf: 3vw HeadingsFontFamily, 'Courier New', serif;
   --ina: 5vw;
@@ -41,6 +42,7 @@ h1 {
 }
 
 p {
+  font: var(--cpf);
 	margin-block-start: 0px;
   margin-block-end: 0px;
 }
@@ -68,6 +70,10 @@ p {
 .cpff {
   font: var(--cpf);
   font-size: 1em;
+}
+
+.cphf {
+  font: var(--cphf);
 }
 
 .cpf-h1 {
