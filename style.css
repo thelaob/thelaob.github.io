@@ -153,6 +153,13 @@ p {
   left: 80vw;
 }
 
+#items {
+	position: absolute;
+  white-space: nowrap;
+	top: .5vw;
+	left: 48vw;
+}
+
 #logo {
   position: absolute;
   left: var(--ina);
@@ -161,6 +168,6 @@ p {
 #rheader {
   position: absolute;
   white-space: nowrap;
-  top:  .5vw;
-  left: 30vw;
+  top:  .35vw;
+  left: 18vw;
 }
