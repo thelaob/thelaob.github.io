@@ -1,9 +1,10 @@
 @font-face {
-  font-family: 'AndaleMono';
-  src: url('../../fonts/AndaleMono.ttf');
+  font-family: 'MinionPro';
+  src: url('../../fonts/MinionPro-Regular.otf');
 }
 
 body {
+  position: relative;
   background-color: #000;
 	color: grey;
   cursor: none;
@@ -12,24 +13,30 @@ body {
 }
 
 .shimmer {
-  position: relative;
+  position: absolute;
   /*min-width: 960px;*/
-  max-width: 980px;
-  margin: auto;
-  margin-top: 20px;
+  width: 84vw;
+  top: 2vw;
+  left: 4vw;
   text-align: center;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
   /*min-height: 680px;*/
   /*border: 1px dashed #ff0000;*/
 }
 
 .mono {
   color: rgba(255,255,255,255);
-  font-family: 'AndaleMono', monospace;
-  font-size: 44px;
+  font-family: 'MinionPro', serif;
   font-size: 3.4vw;
- }
+  line-height: 5vw;
+}
+ 
+.none {
+  display: none;
+}
 
 .trans { color:transparent; }
+
+#plane {
+  transform: perspective(2400px) rotateX(32deg);
+}
+
