@@ -50,7 +50,7 @@ h1 {
   line-height: .8em;
 }
 
-.entry:nth-child(even) {
+.entry:nth-child(odd) {
   text-align: right;
 }
 
