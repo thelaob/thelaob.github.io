@@ -8,39 +8,6 @@
   src: url('fonts/PrestigeEliteStd-Bd.woff2');
 }
 
-:root {
-  --bgcol: rgb(243,242,255);
-  --cpf: lighter 2vw/2.7vw Arial, sans-serif;
-  --cphf: 2vw/1vw HeadingsFontFamily, 'Courier New', serif;
-  --fbu: 2vw;
-  --hdf: 3vw HeadingsFontFamily, 'Courier New', serif;
-  --ina: 5vw;
-  --inb: 10vw;
-  --inc: 15vw;
-  --ind: 20vw;
-}
-
-a {
-  color: black;
-	opacity: .7;
-  text-decoration: none;
-}
-
-a:hover {
-	opacity: .5;
-}
-
-body {
-  position: relative;
-  font: var(--cpf);
-  background-color: var(--bgcol);
-}
-
-h1 {
-  font: var(--hdf);
-  line-height: .9em;
-}
-
 p {
   font: var(--cpf);
 	margin-block-start: 0px;
@@ -63,50 +30,6 @@ p {
   line-height: .9em;
 }
 
-.cpf {
-  font: var(--cpf);
-}
-
-.cpff {
-  font: var(--cpf);
-  font-size: 1em;
-}
-
-.cphf {
-  font: var(--cphf);
-}
-
-.cpf-h1 {
-  font: var(--cpf);
-  font-size: 3vw;
-  line-height: .8em;
-}
-
-.hdf {
-  font:  var(--hdf);
-}
-
-.hdff {
-  font: var(--hdf);
-  font-size: 1em;
-}
-
-.hdf-light {
-  font-family: HeadingsFontFamily_Light, 'Courier New', serif;
-}
-
-.ina {
-  margin-left: var(--ina);
-}
-
-.logospankern {
-  margin-left: -.06em;
-}
-
-.logokern {
-  letter-spacing: -.1em;
-}
-
 .copy {
   position: absolute;
   top: var(--inc);
@@ -123,8 +46,8 @@ p {
   vertical-align: top;
 }
 
-.ralign {
-  text-align: right;
+.none {
+	display: none;
 }
 
 .toc {
@@ -136,27 +59,9 @@ p {
   line-height: 1em;
 }
 
-/* website only */
-
-.none {
-	display: none;
-}
-
 .subhead {
   margin-left: -10vw;
   margin-top: 5vw;
-}
-
-#about {
-  position: absolute;
-  top:  .5vw;
-  left: 67vw;
-}
-
-#annuals {
-  position: absolute;
-  top:  .5vw;
-  left: 80vw;
 }
 
 #items {

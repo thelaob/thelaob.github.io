@@ -1,0 +1,80 @@
+:root {
+  --bgcol: rgb(243,242,255);
+  --cpf: lighter 2vw/2.7vw Arial, sans-serif;
+  --cphf: 2vw/1vw HeadingsFontFamily, 'Courier New', serif;
+  --fbu: 2vw;
+  --hdf: 3vw HeadingsFontFamily, 'Courier New', serif;
+  --ina: 5vw;
+  --inb: 10vw;
+  --inc: 15vw;
+  --ind: 20vw;
+}
+
+a {
+  color: black;
+	opacity: .9;
+  text-decoration: none;
+}
+
+a:hover {
+	opacity: .5;
+}
+
+body {
+  position: relative;
+  font: var(--cpf);
+  background-color: var(--bgcol);
+}
+
+h1 {
+  font: var(--hdf);
+  line-height: .9em;
+}
+
+.cpf {
+  font: var(--cpf);
+}
+
+.cpff {
+  font: var(--cpf);
+  font-size: 1em;
+}
+
+.cphf {
+  font: var(--cphf);
+}
+
+.cpf-h1 {
+  font: var(--cpf);
+  font-size: 3vw;
+  line-height: .8em;
+}
+
+.entry:nth-child(even) {
+  text-align: right;
+}
+
+.hdf {
+  font:  var(--hdf);
+}
+
+.hdff {
+  font: var(--hdf);
+  font-size: 1em;
+}
+
+.hdf-light {
+  font-family: HeadingsFontFamily_Light, 'Courier New', serif;
+}
+
+.ina {
+  margin-left: var(--ina);
+}
+
+.logospankern {
+  margin-left: -.06em;
+}
+
+.logokern {
+  letter-spacing: -.1em;
+}

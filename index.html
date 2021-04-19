@@ -6,7 +6,7 @@
   <title>THE LAOB</title>
   
   <link rel='stylesheet' href='style.css' type='text/css' media='all' />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel='stylesheet' href='style_obs.css' type='text/css' media='all' />
 </head>
 <body>
   <div class="menu">
@@ -24,27 +24,20 @@
   </div>
     
   <div class="banner">
-    <div id="observablehq-laob_banner-4dd91fce"></div>
+    <div id="observablehq-laob_banner-ee7d3d58"></div>
   </div>
   
-  <div class="toc">
-    <div id="observablehq-laob_current-4dd91fce"></div>
-</div>
+  <div id="observablehq-laob_toc-ee7d3d58"></div>
 
-<div id="observablehq-LAOB-4dd91fce" class="none"></div>
-
-<div id="observablehq-laob_banner-4dd91fce"></div>
-<div id="observablehq-laob_toc-4dd91fce"></div>
-<div id="observablehq-LAOB-4dd91fce"></div>
+  <div id="observablehq-LAOB-ee7d3d58" class="none"></div>
 
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@laob/laob.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "laob_banner") return new Inspector(document.querySelector("#observablehq-laob_banner-4dd91fce"));
-  if (name === "laob_toc") return new Inspector(document.querySelector("#observablehq-laob_toc-4dd91fce"));
-  if (name === "LAOB") return new Inspector(document.querySelector("#observablehq-LAOB-4dd91fce"));
-  return ["laob_about"].includes(name);
+  if (name === "laob_banner") return new Inspector(document.querySelector("#observablehq-laob_banner-ee7d3d58"));
+  if (name === "laob_toc") return new Inspector(document.querySelector("#observablehq-laob_toc-ee7d3d58"));
+  if (name === "LAOB") return new Inspector(document.querySelector("#observablehq-LAOB-ee7d3d58"));
 });
 </script>
 
