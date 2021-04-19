@@ -35,8 +35,15 @@ body {
 }
 
 .trans { color:transparent; }
+.cards {
+  
+}
+
+.cards {
+}
 
 #plane {
-  transform: perspective(2400px) rotateX(32deg);
+  perspective: 50em;
+  transform: perspective(50em) rotateX(0deg);
 }
 
