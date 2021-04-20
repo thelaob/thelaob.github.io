@@ -2,7 +2,7 @@
 <html>
   <head>
 	  <meta charset="UTF-8">
-		<title>THE LAOB 0 • shimmer</title>
+		<title>THE LAOB 0 • inplace</title>
 		<link rel='stylesheet' href='../../style.css' type='text/css' media='all' />
 		<link rel='stylesheet' href='style.css' type='text/css' media='all' />
   </head>
@@ -16,9 +16,9 @@
 
     <script type="module">
         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import notebook from "https://api.observablehq.com/@notkrd/a-composition-book?v=3";
+        import define from "https://api.observablehq.com/@laob/in-place-the-air?v=3";
         
-        new Runtime().module(notebook, name => {
+        new Runtime().module(define, name => {
             if (name === "textMap") return new Inspector(document.querySelector("#text-map"));
             if (name === "my_lat") return new Inspector(document.querySelector("#lat-input"));
             if (name === "my_long") return new Inspector(document.querySelector("#long-input"));
