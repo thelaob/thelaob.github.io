@@ -37,6 +37,11 @@ p {
   width: 60vw;
 }
 
+.cpf.logo {
+  font: var(--cpf);
+  font-size: 1.4em;/*bigger CV 04182021*/
+}
+
 .menu {
   position: absolute;
 	top: var(--fbu);
@@ -56,7 +61,7 @@ p {
   top: var(--ind);
   left: var(--ind);
   width: 60vw;
-  line-height: 1em;
+  line-height: .8em; /* made smaller CV 04182021*/
 }
 
 .subhead {
