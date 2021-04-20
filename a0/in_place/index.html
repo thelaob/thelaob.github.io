@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="UTF-8">
+		<title>THE LAOB 0 • shimmer</title>
+		<link rel='stylesheet' href='../../style.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='style.css' type='text/css' media='all' />
+  </head>
+  <body>
+    <div id="place-map" class="text-map"></div>
+    <div id="lat-input" class="coord-input"></div>
+    <div id="long-input" class="coord-input"></div>
+    <div id="locate-btn" class="locate-button"></div>
+    <div id="locate-msg" class="msg"></div>
+    <div id="locate-warn" class="msg"></div>
+
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import notebook from "https://api.observablehq.com/@notkrd/a-composition-book?v=3";
+        
+        new Runtime().module(notebook, name => {
+            if (name === "textMap") return new Inspector(document.querySelector("#text-map"));
+            if (name === "my_lat") return new Inspector(document.querySelector("#lat-input"));
+            if (name === "my_long") return new Inspector(document.querySelector("#long-input"));
+            if (name === "locateBtn") return new Inspector(document.querySelector("#locate-btn"));
+            if (name === "geolocation_message") return new Inspector(document.querySelector("#locate-msg"));
+            if (name === "locateWrn") return new Inspector(document.querySelector("#locate-warn"));
+		});
+
+    </script>
+  
+  </body>
+</html>
