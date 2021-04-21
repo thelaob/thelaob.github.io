@@ -1,7 +1,7 @@
 :root {
   --bgcol: rgb(243,242,255);
-  --cpf: lighter 2vw/2.7vw Arial, sans-serif;
-  --cphf: 2vw/1vw HeadingsFontFamily, 'Courier New', serif;
+  --cpf: lighter 2vw/1.4 Arial, sans-serif;
+  --cphf: 1em HeadingsFontFamily, 'Courier New', serif;
   --fbu: 2vw;
   --hdf: 3vw HeadingsFontFamily, 'Courier New', serif;
   --ina: 5vw;
@@ -39,6 +39,7 @@ h1 {
 }
 
 .cpff {
+  /* do not use */
   font: var(--cpf);
   font-size: 1em;
 }

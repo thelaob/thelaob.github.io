@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script type="text/javascript">
+    console.log(window.location.href)
+    let current = "a0"
+    let source = window.location.href.split("?")[1];
+    if (source == current || source === undefined) window.location.replace("/");
+    else window.location.replace("/" + source);
+  </script>
+</head>
+</html>

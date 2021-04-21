@@ -1,3 +1,66 @@
+<<<<<<< HEAD
+@font-face {
+  font-family: 'MinionPro';
+  src: url('/fonts/MinionPro-Regular.otf');
+}
+
+img#laob {
+  height: 4vw;
+  padding: 1vw;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .5s ease-in-out 0s;
+}
+
+img#laob:hover {
+  opacity: 1;
+}
+
+body {
+  position: relative;
+  background-color: #000;
+	color: grey;
+  cursor: none;
+  overflow: hidden;
+  /*border: 1px dashed #ffffff;*/
+}
+
+.shimmer {
+  position: absolute;
+  /*min-width: 960px;*/
+  width: 84vw;
+  top: 2vw;
+  left: 4vw;
+  text-align: center;
+  /*min-height: 680px;*/
+  /*border: 1px dashed #ff0000;*/
+}
+
+.mono {
+  color: rgba(255,255,255,255);
+  font-family: 'MinionPro', serif;
+  font-size: 3.4vw;
+  line-height: 5vw;
+}
+ 
+.none {
+  display: none;
+}
+
+.trans { color:transparent; }
+.cards {
+  
+}
+
+.cards {
+}
+
+#plane {
+  perspective: 50em;
+  transform: perspective(50em) rotateX(0deg);
+}
+
+=======
 table.text-table {
   table-layout: fixed;
   border-collapse: collapse;
@@ -19,3 +82,4 @@ td.text-cell {
   border-top: none;
   border-bottom: none;
 }
+>>>>>>> 96376ad3ddd549a8e92f6021026591bd7849a688

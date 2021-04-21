@@ -1,6 +1,18 @@
 @font-face {
   font-family: 'MinionPro';
-  src: url('../../fonts/MinionPro-Regular.otf');
+  src: url('/fonts/MinionPro-Regular.otf');
+}
+
+img#laob {
+  height: 4vw;
+  padding: 1vw;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .5s ease-in-out 0s;
+}
+
+img#laob:hover {
+  opacity: 1;
 }
 
 body {
