@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: 'MinionPro';
   src: url('/fonts/MinionPro-Regular.otf');
@@ -59,3 +60,26 @@ body {
   transform: perspective(50em) rotateX(0deg);
 }
 
+=======
+table.text-table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 49vw;
+}
+
+tr.text-row {
+  height: 3vw;
+  border-top: none;
+  border-bottom: none;
+}
+
+td.text-cell {
+  font-family: monospace;
+  text-align: center; 
+  vertical-align: middle;
+  padding: 0; 
+  margin: 0;
+  border-top: none;
+  border-bottom: none;
+}
+>>>>>>> 96376ad3ddd549a8e92f6021026591bd7849a688
