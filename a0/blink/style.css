@@ -10,7 +10,7 @@ body {
 .grid {
   position: absolute;
   left:  25vw;
-  top:  7vw;
+  top:  6vw;
   display: grid;
   color: red;
   font-family: Didot;
