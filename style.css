@@ -8,6 +8,16 @@
   src: url('fonts/PrestigeEliteStd-Bd.woff2');
 }
 
+a {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+	opacity: .5;
+}
+
 p {
   font: var(--cpf);
 	margin-block-start: 0px;
@@ -69,6 +79,24 @@ p {
   margin-top: 5vw;
 }
 
+#byline {
+  font: lighter 1vw/6vw Arial;
+  color: gray;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .5s ease-in-out 0s;
+}
+
+#byline:hover {
+  opacity: 1;
+}
+
+#bytext {
+  padding-top: 1vw;
+  vertical-align: top;
+  cursor: default;
+}
+
 #items {
 	position: absolute;
   white-space: nowrap;
@@ -86,4 +114,9 @@ p {
   white-space: nowrap;
   top:  .35vw;
   left: 18vw;
+}
+
+img#laob {
+  height: 4vw;
+  padding: 1vw;
 }

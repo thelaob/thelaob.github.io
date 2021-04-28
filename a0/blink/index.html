@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="UTF-8">
+		<title>LAOB 0 • blink</title>
+		<link rel='stylesheet' href='/style.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='style.css' type='text/css' media='all' />
+  </head>
+  <body>
+    <div id="byline">
+      <img id="laob" onclick="window.location.replace('/toc.html?a0')" src="/assets/laob_logo_inCircle.png" />
+        <span id="bytext">blink /
+        <span style="font: 1em HeadingsFontFamily, serif;">MURPHY CHANG /
+          <a href="https://observablehq.com/@laob/blink">NOTEBOOK</a>
+       </span></span>
+    </div>
+
+<div id="observablehq-laob_display-7cb8656d"></div>
+<div id="observablehq-laob_autoPlay-7cb8656d"></div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@laob/blink.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "laob_display") return new Inspector(document.querySelector("#observablehq-laob_display-7cb8656d"));
+  if (name === "laob_autoPlay") return new Inspector(document.querySelector("#observablehq-laob_autoPlay-7cb8656d"));
+  return ["textOf","setHtmlOf","hBlink","eyeClosed","vBlink","horizEyes","vertiEyes","laob_blink","laob_unshuffledBlink","blinkButton"].includes(name);
+});
+</script>
+  </body>
+</html>
+

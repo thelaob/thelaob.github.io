@@ -1,19 +1,7 @@
-img#laob {
-  height: 4vw;
-  padding: 1vw;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity .5s ease-in-out 0s;
-}
-
-img#laob:hover {
-  opacity: 1;
-}
-
 video {
   position: absolute;
   left: 9vw;
-  top:  4.5vw;
+  top:  6vw;
   width: 80vw;
 }
 

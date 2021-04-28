@@ -1,0 +1,33 @@
+body {
+  position: relative;
+  background-color: rgb(72, 72, 72);
+	color: grey;
+  cursor: none;
+  /*border: 1px dashed #ffffff;*/
+}
+
+.textcontainer {
+  position: absolute;
+  top:  6vw;
+  left:  5vw;
+  cursor: none;
+  min-height: 31em;
+  font: 2vw/1.1 didot;
+}
+
+.text {
+  position: absolute;
+  color: rgba(255,255,255,0);
+  transition: color 2s ease-in-out;
+}
+
+.text.visible {
+  color: rgba(255,255,255,255);
+    /* starts readable */
+}
+
+.none {
+  display: none;
+}
+
+.trans { color:transparent; }
