@@ -1,3 +1,18 @@
+@font-face {
+  font-family: didot;
+  font-style:  normal;
+  src: url('/fonts/Didot.woff2') format('woff2'),
+    url('/fonts/Didot.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: didot;
+  font-style:  italic;
+  src: url('/fonts/Didot-Italic.woff2') format('woff2'),
+    url('/fonts/Didot-Italic.ttf') format('truetype');
+
+}
+
 body {
   position: relative;
   background-color: rgb(72, 72, 72);
@@ -8,11 +23,11 @@ body {
 
 .textcontainer {
   position: absolute;
-  top:  6vw;
+  top:  5vw;
   left:  5vw;
   cursor: none;
   min-height: 31em;
-  font: 2vw/1.1 didot;
+  font: 2vw didot;
 }
 
 .text {
