@@ -1,6 +1,6 @@
 :root {
   --bgcol: rgb(243,242,255);
-  --cpf: lighter 2vw/1.4 Arial, sans-serif;
+  --cpf: lighter 1.6vw/1.2 Arial, sans-serif; /* 20210430 smaller CV */
   --cphf: 1em HeadingsFontFamily, 'Courier New', serif;
   --fbu: 2vw;
   --hdf: 3vw HeadingsFontFamily, 'Courier New', serif;
