@@ -15,7 +15,7 @@ a:hover {
 
 body {
   position: relative;
-  font: 1.6vw/1.2 var(--copyfont);
+  font: 1.6vw/1.6 var(--copyfont);
   background-color: var(--bgcol);
 }
 
@@ -29,7 +29,13 @@ h1 {
 }
 
 .copy {
-  font: 1.6vw/1.2 var(--copyfont); /* 20210430 smaller CV */
+  font: 1.6vw/1.6 var(--copyfont); /* 20210430 smaller CV */
+}
+
+.headincopy {
+  font: 1em var(--headfont);
+  display: inline-block;
+  height: 1em;
 }
 
 .title {
