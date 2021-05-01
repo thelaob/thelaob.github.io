@@ -28,10 +28,6 @@ h1 {
   margin:2em 0; /*added CV 04182021*/
 }
 
-.copy {
-  font: 1.6vw/1.6 var(--copyfont); /* 20210430 smaller CV */
-}
-
 .headincopy {
   font: 1em var(--headfont);
   display: inline-block;

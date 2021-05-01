@@ -19,7 +19,7 @@ a:hover {
 }
 
 p {
-  font: 1.6vw/1.2 var(--copyfont);
+  font: 1.6vw/1.6 var(--copyfont);
 	margin-block-start: 0px;
   margin-block-end: 0px;
 }
@@ -29,7 +29,6 @@ p {
   top: 15vw;
   left: 20vw;
   width: 60vw;
-  line-height: 1.2em;
 }
 
 .banner {
