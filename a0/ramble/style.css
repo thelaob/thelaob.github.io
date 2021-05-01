@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'MinionPro';
+  src: url('/fonts/MinionPro-Regular.otf');
+}
+
+body {
+  position: relative;
+  background-color: #000;
+	color: grey;
+  cursor: none;
+  overflow: hidden;
+  /*border: 1px dashed #ffffff;*/
+}
+
+.container {
+  position: absolute;
+  font:  2.2vw/1.2 Perpetua;
+  top: 5vw;
+  left: 3vw;
+  width: 90vw;
+  color: ivory;
+}
+
+.readerWindow {
+  width: 70vw;
+  text-align: center;
+}
+
+.text {
+  opacity: .3;
+  transition: opacity .5s ease-in-out;
+}
+
+.text.visible {
+  opacity: 1;
+}

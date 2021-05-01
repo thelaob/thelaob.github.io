@@ -19,45 +19,40 @@ a:hover {
 }
 
 p {
-  font: var(--cpf);
+  font: 1.6vw/1.2 var(--copyfont);
 	margin-block-start: 0px;
   margin-block-end: 0px;
 }
 
 .aboutcopy {
   position: absolute;
-  top: var(--inc);
-  left: var(--ind);
+  top: 15vw;
+  left: 20vw;
   width: 60vw;
   line-height: 1.2em;
 }
 
 .banner {
   position: absolute;
-  top: calc(var(--fbu) * 3);
-  left: var(--inb);
-  font: var(--hdf);
+  top: 6vw;
+  left: 10vw;
+  font: 3vw var(--headfont);
   line-height: .9em;
 }
 
 .copy {
   position: absolute;
-  top: var(--inc);
-  left: var(--ind);
+  top: 15vw;
+  left: 20vw;
   width: 60vw;
-}
-
-.cpf.logo {
-  font: var(--cpf);
-  font-size: 1.4em;/*bigger CV 04182021*/
 }
 
 .menu {
   position: absolute;
-	top: var(--fbu);
-	left: var(--fbu);
+	top: 2vw;
+	left: 2vw;
   font-family: HeadingsFontFamily_Light, 'Courier New', serif;
-	font-size: calc(var(--fbu) * .8);
+	font-size: 1.6vw;
   vertical-align: top;
 }
 
@@ -67,9 +62,9 @@ p {
 
 .toc {
   position: absolute;
-  font: var(--hdf);
-  top: var(--ind);
-  left: var(--ind);
+  font: 3vw var(--headfont);
+  top: 20vw;
+  left: 20vw;
   width: 60vw;
   line-height: .8em; /* made smaller CV 04182021*/
 }
@@ -104,9 +99,10 @@ p {
 	left: 70vw;
 }
 
-#logo {
+#logobox {
   position: absolute;
-  left: var(--ina);
+  left: 3vw;
+  font-size: 2vw;
 }
 
 #rheader {

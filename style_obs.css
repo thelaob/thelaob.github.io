@@ -1,13 +1,7 @@
 :root {
   --bgcol: rgb(243,242,255);
-  --cpf: lighter 1.6vw/1.2 Arial, sans-serif; /* 20210430 smaller CV */
-  --cphf: 1em HeadingsFontFamily, 'Courier New', serif;
-  --fbu: 2vw;
-  --hdf: 3vw HeadingsFontFamily, 'Courier New', serif;
-  --ina: 5vw;
-  --inb: 10vw;
-  --inc: 15vw;
-  --ind: 20vw;
+  --copyfont: Arial, sans-serif;
+  --headfont: HeadingsFontFamily, 'Courier New', serif;
 }
 
 a {
@@ -21,12 +15,12 @@ a:hover {
 
 body {
   position: relative;
-  font: var(--cpf);
+  font: 1.6vw/1.2 var(--copyfont);
   background-color: var(--bgcol);
 }
 
 h1 {
-  font: var(--hdf);
+  font: 3vw var(--headfont);
   line-height: .9em;
 }
 
@@ -34,25 +28,13 @@ h1 {
   margin:2em 0; /*added CV 04182021*/
 }
 
-.cpf {
-  font: var(--cpf);
+.copy {
+  font: 1.6vw/1.2 var(--copyfont); /* 20210430 smaller CV */
 }
 
-.cpff {
-  /* do not use */
-  font: var(--cpf);
-  font-size: 1em;
-}
-
-.cphf {
-  font: var(--cphf);
-}
-
-.cpf-h1 {
-  font: var(--cpf);
+.title {
+  font: 3.2vw/1 var(--copyfont);/*bigger CV 04182021*/
   display:inline-block;/*added CV 04182021*/
-  font-size: 1.4em;/*bigger CV 04182021*/
-  line-height: 1em;/*bigger CV 04182021*/
   margin-bottom:.2em;/*added CV 04182021*/
 }
 
@@ -60,27 +42,14 @@ h1 {
   text-align: right;
 }
 
-.hdf {
-  font:  var(--hdf);
-}
-
-.hdff {
-  font: var(--hdf);
-  font-size: 1em;
-}
-
-.hdf-light {
-  font-family: HeadingsFontFamily_Light, 'Courier New', serif;
-}
-
-.ina {
-  margin-left: var(--ina);
-}
-
-.logospankern {
-  margin-left: -.06em;
+.logo {
+  font: 1em var(--copyfont);
+  display: inline-block;
+  height: 1em;
 }
 
 .logokern {
+  font: 1em var(--headfont);
+  margin-left: -.06em;
   letter-spacing: -.1em;
 }

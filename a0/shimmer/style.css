@@ -16,7 +16,7 @@ body {
   position: absolute;
   /*min-width: 960px;*/
   width: 84vw;
-  top: 2vw;
+  top: 4vw;
   left: 4vw;
   text-align: center;
   /*min-height: 680px;*/
@@ -26,8 +26,8 @@ body {
 .mono {
   color: rgba(255,255,255,255);
   font-family: 'MinionPro', serif;
-  font-size: 3.4vw;
-  line-height: 5vw;
+  font-size: 3vw;
+  line-height: 4.5vw;
 }
  
 .none {
