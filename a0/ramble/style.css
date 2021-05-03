@@ -21,6 +21,11 @@ body {
   color: ivory;
 }
 
+.epigraph {
+	font-style: italic;
+	font-size: 3.5vw;
+}
+
 .readerWindow {
   width: 70vw;
   text-align: center;
