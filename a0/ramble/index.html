@@ -15,16 +15,18 @@
        </span></span>
     </div>
 
- <div id="observablehq-display-b7d72152"></div>
+<div id="display" class="container"></div>
+
+<div id="observablehq-embedAutoPlay-0dee9161" class="none"></div>
 
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@shadoof/ramble.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "display") return new Inspector(document.querySelector("#observablehq-display-b7d72152"));
-  return ["updater","updateSpans","reader"].includes(name);
+  if (name === "embedAutoPlay") return new Inspector(document.querySelector("#observablehq-embedAutoPlay-0dee9161"));
 });
-</script>  
+</script>
+
   </body>
 </html>
 
