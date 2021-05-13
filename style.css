@@ -1,57 +1,118 @@
-:root {
-  --bgcol: rgb(243,242,255);
-  --copyfont: Arial, sans-serif;
-  --headfont: HeadingsFontFamily, 'Courier New', serif;
+@font-face {
+  font-family: 'HeadingsFontFamily_Light';
+  src: url('fonts/PrestigeEliteStd.woff2');
+}
+
+@font-face {
+  font-family: 'HeadingsFontFamily';
+  src: url('fonts/PrestigeEliteStd-Bd.woff2');
 }
 
 a {
-  color: black;
+  color: gray;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
-	opacity: .5;
+  opacity: .5;
 }
 
-body {
-  position: relative;
-  font: 1.6vw/1.6 var(--copyfont);
-  background-color: var(--bgcol);
+p {
+  font: 2vw/1.2 var(--copyfont); /*edited CV 20210513 */
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 
-h1 {
+.aboutcopy {
+  position: absolute;
+  top: 15vw;
+  left: 20vw;
+  width: 60vw;
+}
+
+.banner {
+  position: absolute;
+  top: 6vw;
+  left: 15vw; /*edited CV 20210513 */
   font: 3vw var(--headfont);
   line-height: .9em;
 }
 
-.annual {
-  margin:0; /*edited CV 20210513*/
+.copy {
+  position: absolute;
+  top: 15vw;
+  left: 20vw;
+  width: 60vw;
 }
 
-.headincopy {
-  font: 1em var(--headfont);
-  display: inline-block;
-  height: 1em;
+.menu {
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  font-family: HeadingsFontFamily_Light, 'Courier New', serif;
+  font-size: 1.6vw;
+  vertical-align: top;
 }
 
-.title {
-  font: 3.2vw/1 var(--copyfont);/*bigger CV 04182021*/
-  display:inline-block;/*added CV 04182021*/
-  margin-bottom:.2em;/*added CV 04182021*/
+.none {
+  display: none;
 }
 
-.entry:nth-child(odd) {
-  text-align: right;
+.toc {
+  position: absolute;
+  font: 3vw var(--headfont);
+  top: 20vw;
+  left: 20vw;
+  width: 60vw;
+  line-height: .8em; /* made smaller CV 04182021*/
 }
 
-.logo {
-  font: 1em var(--copyfont);
-  display: inline-block;
-  height: 1em;
+.subhead {
+  margin-left: -5vw;/* edited CV 20210513*/
+  margin-top: 5vw;
+  width: 70vw;/* edited CV 20210513*/
 }
 
-.logokern {
-  font: 1em var(--headfont);
-  margin-left: -.06em;
-  letter-spacing: -.1em;
+#byline {
+  font: lighter 1vw/6vw Arial;
+  color: gray;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .5s ease-in-out 0s;
+}
+
+#byline:hover {
+  opacity: 1;
+}
+
+#bytext {
+  padding-top: 1vw;
+  vertical-align: top;
+  cursor: default;
+}
+
+#items {
+  position: absolute;
+  white-space: nowrap;
+  top: .5vw;
+  left: 70vw;
+}
+
+#logobox {
+  position: absolute;
+  left: 3vw;
+  font-size: 3vw;
+}
+
+#rheader {
+  position: absolute;
+  white-space: nowrap;
+  top:  .35vw;
+  left: 18vw;
+}
+
+img#laob {
+  height: 4vw;
+  padding: 1vw;
 }
