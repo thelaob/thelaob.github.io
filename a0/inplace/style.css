@@ -1,46 +1,78 @@
-body {
-  position: relative;
-  background-color: #000;
-	color: grey;
-  cursor: none;
-  overflow: hidden;
-  /*border: 1px dashed #ffffff;*/
+@font-face {
+  font-family: 'MinionPro';
+  src: url('/fonts/MinionPro-Regular.otf');
 }
 
-.shimmer {
-  position: absolute;
-  /*min-width: 960px;*/
-  width: 84vw;
-  top: 2vw;
-  left: 4vw;
-  text-align: center;
-  /*min-height: 680px;*/
-  /*border: 1px dashed #ff0000;*/
+.text-title, .text-cell, .msg, label, .locate-button, option {
+  font-family: 'MinionPro', monospace, serif;
 }
 
-.mono {
-  color: rgba(255,255,255,255);
-  font-family: 'MinionPro', serif;
-  font-size: 3.4vw;
-  line-height: 5vw;
-}
- 
 .none {
   display: none;
 }
 
+table.text-map {
+  border-collapse: collapse;
+  padding: 5vw;
+}
+
 tr.text-row {
-  height: 3vw;
   border-top: none;
   border-bottom: none;
 }
 
 td.text-cell {
-  font-family: monospace;
+  font-size: 3.5vw;
   text-align: center; 
   vertical-align: middle;
-  padding: 0; 
-  margin: 0;
+  padding: 0.25vw; 
+  margin: 0.5vw;
   border-top: none;
   border-bottom: none;
+}
+
+.msg {
+  width: 80vw;
+  margin: 3vw;
+  font-size: large;
+  color: darkslategrey;
+}
+
+label {
+  font-size: large;
+  color: darkslategrey;
+}
+
+.coord-input {
+  margin: 2vw;
+  color: darkslategrey;
+}
+
+.loc-select {
+  margin: 2vw;
+  color: darkslategrey;
+}
+
+.locate-button {
+  font-size: large;
+}
+
+ /* unvisited link */
+a.locate-button:link {
+  color:  purple;;
+}
+
+/* visited link */
+a.locate-button:visited {
+  color:  purple;;
+}
+
+/* mouse over link */
+a.locate-button:hover {
+  color: red;
+}
+
+/* selected link */
+a.locate-button:active {
+  color:  purple;;
 }
