@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="UTF-8">
+		<title>LAOB 0 • while wishing</title>
+		<link rel='stylesheet' href='/style.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='style.css' type='text/css' media='all' />
+  </head>
+  <body>
+    <div id="byline">
+      <img id="laob" onclick="window.location.replace('/toc.html?a0')" src="/assets/laob_logo_inCircle.png" />
+        <span id="bytext">while wishing this was ... /
+        <span style="font: 1em HeadingsFontFamily, serif;">JOHN CAYLEY /
+          <a href="https://observablehq.com/@laob/while-wishing">NOTEBOOK</a>
+       </span></span>
+    </div>
+
+<div id="observablehq-textcontainer-c5f13e35"></div>
+<div id="observablehq-playembedded-c5f13e35" class="none"></div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@laob/while-wishing.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "textcontainer") return new Inspector(document.querySelector("#observablehq-textcontainer-c5f13e35"));
+  if (name === "playembedded") return new Inspector(document.querySelector("#observablehq-playembedded-c5f13e35"));
+});
+</script>
+
+  </body>
+</html>
+
