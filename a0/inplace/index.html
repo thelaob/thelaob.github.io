@@ -25,7 +25,8 @@
     <div id="lat-input" class="coord-input"></div>
     <div id="long-input" class="coord-input"></div>
     <div id="locate-warn" class="msg"></div>
-    <div id="notebook-link"><a href="https://observablehq.com/@laob/in-place-the-air?v=3" class="text-link">NOTEBOOK</a></div>
+    <div id="notebook-link">  <a href="https://observablehq.com/@laob/in-place-the-air?v=3" class="text-link">NOTEBOOK</a></div>
+    <div id="reading-notes" class="msg"></div>
 
     <script type="module">
       import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
@@ -43,6 +44,7 @@
             case "locatebutton": return new Inspector(document.querySelector("#locate-btn"));
             case "geolocationmessage": return new Inspector(document.querySelector("#locate-msg"));
             case "locatewarn": return new Inspector(document.querySelector("#locate-warn"));
+            case "reading_notes": return new Inspector(document.querySelector("#reading-notes"));
             case "geo_coords": return true;
             case "geolocation_status": return true;
             case "relative_elevations": return true;
