@@ -3,7 +3,13 @@
   src: url('/fonts/MinionPro-Regular.otf');
 }
 
-.text-title, .text-cell, .msg, label, .locate-button, option {
+
+body {
+  position: relative;
+  background-color: lavender;
+}
+
+.text-title, .text-cell, .msg, label, .text-link, option {
   font-family: 'MinionPro', monospace, serif;
 }
 
@@ -22,7 +28,7 @@ tr.text-row {
 }
 
 td.text-cell {
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   text-align: center; 
   vertical-align: middle;
   padding: 0.25vw; 
@@ -40,7 +46,6 @@ td.text-cell {
 
 label {
   font-size: large;
-  color: darkslategrey;
 }
 
 .coord-input {
@@ -53,26 +58,29 @@ label {
   color: darkslategrey;
 }
 
-.locate-button {
-  font-size: large;
+.text-link {
+  font-size: Large;
+  margin: 2vw;
+  color: navy;
+  text-shadow: 2px 2px 8px yellow;
 }
 
  /* unvisited link */
-a.locate-button:link {
-  color:  purple;;
+a.text-link:link {
+  color:  navy;
 }
 
 /* visited link */
-a.locate-button:visited {
-  color:  purple;;
+a.text-link:visited {
+  color:  navy;
 }
 
 /* mouse over link */
-a.locate-button:hover {
-  color: red;
+a.text-link:hover {
+  color: purple;
 }
 
 /* selected link */
-a.locate-button:active {
-  color:  purple;;
+a.text-link:active {
+  color:  purple;
 }
