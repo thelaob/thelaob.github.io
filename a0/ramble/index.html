@@ -17,13 +17,18 @@
 
 <div id="display" class="container"></div>
 
-<div id="observablehq-embedAutoPlay-5e7e289e" class="none"></div>
+<div id="observablehq-embedAutoPlay-654198cb" class="none"></div>
+<div id="observablehq-updating-654198cb" class="none"></div>
+<div id="observablehq-state-654198cb" class="none"></div>
 
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@laob/ramble.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "embedAutoPlay") return new Inspector(document.querySelector("#observablehq-embedAutoPlay-5e7e289e"));
+  if (name === "embedAutoPlay") return new Inspector(document.querySelector("#observablehq-embedAutoPlay-654198cb"));
+  if (name === "updating") return new Inspector(document.querySelector("#observablehq-updating-654198cb"));
+  if (name === "state") return new Inspector(document.querySelector("#observablehq-state-654198cb"));
+  return ["placeHolderSequence","updater","update","updateState","startStop","controls","replacements","restore","updateDOM"].includes(name);
 });
 </script>
 
