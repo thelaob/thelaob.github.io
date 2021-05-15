@@ -136,7 +136,10 @@ p {
   line-height: .8em; /* made smaller CV 04182021*/
 }
 
+.trans { color:transparent; }
+
 #byline {
+  z-index: 10;
   font: lighter 1vw/6vw Arial;
   color: gray;
   cursor: pointer;

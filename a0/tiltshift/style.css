@@ -1,19 +1,13 @@
-@font-face {
-  font-family: 'MinionPro';
-  src: url('/fonts/MinionPro-Regular.otf');
-}
-
 body {
   position: relative;
   background-color: rgb(201,200,220);
 	color: grey;
-  cursor: none;
-  overflow: hidden;
+/*  overflow: hidden;*/
   /*border: 1px dashed #ffffff;*/
 }
 
 .container {
   position: absolute;
-  top: 6vw;
-  left: 20vw;
+  top: 4vw;
+  left: 0;
 }

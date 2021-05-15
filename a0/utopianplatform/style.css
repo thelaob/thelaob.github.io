@@ -17,9 +17,3 @@ body {
   overflow: hidden;
   /*border: 1px dashed #ffffff;*/
 }
-
-.none {
-  display: none;
-}
-
-.trans { color:transparent; }
