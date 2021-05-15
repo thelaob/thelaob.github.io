@@ -5,8 +5,7 @@
 
 body {
   position: relative;
-  background-color: #000;
-	color: grey;
+  background-color: white;
   cursor: none;
   overflow: hidden;
   /*border: 1px dashed #ffffff;*/
@@ -14,11 +13,9 @@ body {
 
 .container {
   position: absolute;
-  font:  2.16vw/1.25 Perpetua;
-  top: 5vw;
-  left: 3vw;
-  width: 90vw;
-  color: ivory;
+  top: 6vw;
+  left: 10vw;
+  width: 80vw;
 }
 
 .epigraph {

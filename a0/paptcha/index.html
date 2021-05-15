@@ -15,8 +15,24 @@
        </span></span>
     </div>
 
-<div id="display" class="container">PLACE HOLDER</div>
+<div id="display" class="container">
 
+<div id="observablehq-targetCell-34f6c472"></div>
+<div id="observablehq-init-34f6c472"></div>
+<div id="observablehq-laob_captchaGameStyle-34f6c472"></div>
+<div id="observablehq-customStyle-34f6c472"></div>
+</div>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@laob/paptcha.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "targetCell") return new Inspector(document.querySelector("#observablehq-targetCell-34f6c472"));
+  if (name === "init") return new Inspector(document.querySelector("#observablehq-init-34f6c472"));
+  if (name === "laob_captchaGameStyle") return new Inspector(document.querySelector("#observablehq-laob_captchaGameStyle-34f6c472"));
+  if (name === "customStyle") return new Inspector(document.querySelector("#observablehq-customStyle-34f6c472"));
+});
+</script>
 
   </body>
 </html>
