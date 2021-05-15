@@ -9,6 +9,12 @@ body {
   background-color: lavender;
 }
 
+.container {
+  position: absolute;
+  top: 6vw;
+  left:  18vw;
+}
+
 .text-title, .text-cell, .msg, label, .text-link, option {
   font-family: 'MinionPro', monospace, serif;
 }
@@ -38,7 +44,7 @@ td.text-cell {
 }
 
 .msg {
-  width: 80vw;
+  width: 50vw;
   margin: 3vw;
   font-size: large;
   color: darkslategrey;

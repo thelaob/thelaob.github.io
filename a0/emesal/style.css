@@ -40,9 +40,3 @@ body {
   color: rgba(255,255,255,255);
     /* starts readable */
 }
-
-.none {
-  display: none;
-}
-
-.trans { color:transparent; }
