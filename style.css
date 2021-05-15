@@ -57,6 +57,24 @@ p {
   margin-bottom: 1em;
 }
 
+.author {
+    margin: 0 0 0.1em;
+    cursor:pointer;
+}
+
+.bio {
+    display: none;
+    margin: 0 0 0.3em;
+    opacity: 0;
+    cursor:pointer;
+}
+
+.bio.fadein {
+  display: block;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
 .banner {
   position: absolute;
   top: 6vw;
