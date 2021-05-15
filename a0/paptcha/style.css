@@ -6,16 +6,20 @@
 body {
   position: relative;
   background-color: white;
-  cursor: none;
-  overflow: hidden;
+  font-size: 16px;
   /*border: 1px dashed #ffffff;*/
+}
+
+#byline {
+  z-index: 10;
+  position: fixed;
 }
 
 .container {
   position: absolute;
-  top: 6vw;
-  left: 10vw;
-  width: 80vw;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .epigraph {
