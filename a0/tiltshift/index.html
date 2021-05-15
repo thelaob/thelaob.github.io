@@ -24,6 +24,8 @@
 
 </div>
 
+<div id="observablehq-resizeDivs-a7d20e20" class="none"></div>
+
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@laob/tilt-shift.js?v=3";
@@ -32,9 +34,11 @@ new Runtime().module(define, name => {
   if (name === "viewof focusFactor") return new Inspector(document.querySelector("#observablehq-viewof-focusFactor-299b713a"));
   if (name === "viewof windowCenter") return new Inspector(document.querySelector("#observablehq-viewof-windowCenter-299b713a"));
   if (name === "output") return new Inspector(document.querySelector("#observablehq-output-299b713a"));
+  if (name === "resizeDivs") return new Inspector(document.querySelector("#observablehq-resizeDivs-a7d20e20"));
   return ["parsed","newVectors","cacheN","a","tree","cachedNNs","windowCenter","focus","calc"].includes(name);
 });
 </script>
+
 
   </body>
 </html>
