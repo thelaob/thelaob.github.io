@@ -144,6 +144,11 @@ p {
   transition: opacity .5s ease-in-out 0s;
 }
 
+#byline a {
+  color: gray;
+  text-decoration: none;
+}
+
 #byline:hover {
   opacity: 1;
 }
