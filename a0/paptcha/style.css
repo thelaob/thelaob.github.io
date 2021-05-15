@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap');
+
 @font-face {
   font-family: 'MinionPro';
   src: url('/fonts/MinionPro-Regular.otf');
@@ -6,8 +8,13 @@
 body {
   position: relative;
   background-color: white;
-  font-size: 16px;
   /*border: 1px dashed #ffffff;*/
+}
+
+#display {
+  font-family: 'Source Serif Pro',serif;
+  font-size: 16px;
+  user-select: none;
 }
 
 #byline {
