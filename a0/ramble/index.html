@@ -15,20 +15,28 @@
        </span></span>
     </div>
 
-<div id="display" class="container"></div>
+<div  class="container">
+  <div id="display" class=""></div>
+  <div id="observablehq-viewof-skipButton-141e6248"></div>
+</div>
 
-<div id="observablehq-embedAutoPlay-654198cb" class="none"></div>
-<div id="observablehq-updating-654198cb" class="none"></div>
-<div id="observablehq-state-654198cb" class="none"></div>
+<div class="none">
+  <div id="observablehq-embedAutoPlay-141e6248"></div>
+  <div id="observablehq-updating-141e6248"></div>
+  <div id="observablehq-state-141e6248"></div>
+  <div id="observablehq-skipEpigraph-141e6248"></div>
+</div>
 
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@laob/ramble.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "embedAutoPlay") return new Inspector(document.querySelector("#observablehq-embedAutoPlay-654198cb"));
-  if (name === "updating") return new Inspector(document.querySelector("#observablehq-updating-654198cb"));
-  if (name === "state") return new Inspector(document.querySelector("#observablehq-state-654198cb"));
-  return ["placeHolderSequence","updater","update","updateState","startStop","controls","replacements","restore","updateDOM"].includes(name);
+  if (name === "viewof skipButton") return new Inspector(document.querySelector("#observablehq-viewof-skipButton-141e6248"));
+  if (name === "embedAutoPlay") return new Inspector(document.querySelector("#observablehq-embedAutoPlay-141e6248"));
+  if (name === "updating") return new Inspector(document.querySelector("#observablehq-updating-141e6248"));
+  if (name === "state") return new Inspector(document.querySelector("#observablehq-state-141e6248"));
+  if (name === "skipEpigraph") return new Inspector(document.querySelector("#observablehq-skipEpigraph-141e6248"));
+  return ["placeHolderSequence","updater","update","updateState","startStop","replacements","restore","updateDOM","reader","skipEpigraphButton","skipButton"].includes(name);
 });
 </script>
 
